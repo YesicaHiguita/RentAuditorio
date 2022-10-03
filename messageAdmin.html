@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--/ # Meta description -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Juan Acevedo">
+    <meta name="description" content="Pagina donde el administrador controla los registros de los Mensajes.">
+    
+
+    <title> Mis Mensajes </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--/ # HEADER -->
+
+</head>
+
+<body class="Mensajes-admin" onload="getMessages()">
+    <div class="header">
+    <header id="main-header">
+        <h1 id="page-name">Mensajes</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="clientesAdmin.html">Tabla Clientes</a></li>
+                <li><a href="auditorioAdmin.html">Tabla Auditorios</a></li>
+                <li><a href="#">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    </div>
+    <!--/ # HEADER END-->
+    <!--/ # TABLE -->
+    <div id="listaMensajes">
+        <table id="MensajesAdmin" class="content-table">
+        </table>
+        </div>
+        <!--/ # TABLE END-->
+        <!--/ # ADD MENU-->
+    <section class="formularioAdd_mensajes">
+        <h4>Mensaje</h4>
+        
+        <textarea class="textarea" type= "text" name="MensajeCliente" id="message"></textarea><br>
+
+        <input onclick= "savemessage()" type="button" value="Guardar" id="Guardar_btn">
+        <input onclick="Clear()" type="button" value="Limpiar" id="Limpiar_btn">
+        <input onclick="updatemessage()" type="button" value="Actualizar" id="Actualizar_btn">
+    </section>
+
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./messageAdmin.js">
+
+</script>
+
+</html>

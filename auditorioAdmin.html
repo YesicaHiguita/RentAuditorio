@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Auditorios</title>
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="auditorioAdmin.js"></script>
+
+<body class="Auditorio-admin" onload="getAudience()">
+    <div class="header">
+    <header id="main-header">
+        <h1 id="page-name">Auditorios</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="messageAdmin.html">Tabla Mensajes</a></li>
+                <li><a href="clientesAdmin.html">Tabla Clientes</a></li>
+                <li><a href="#">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    </div>
+
+    <!--/ # TABLE -->
+    <div id="listaAuditorios">
+        <table id="AuditorioAdmin" class="content-table">
+        </table>
+    </div>
+    <!--/ # TABLE END-->
+    <!-- formulario de auditorio en html y css --> 
+
+    <!--/ # ADD MENU-->
+    <section class="formularioAdd_auditorio">
+        <h4>Registrar Auditorio</h4>
+        <input class="form_add" type="text" name="NombrePropietario" id="propietario" placeholder="Propietario">
+        <input class="form_add" type="number" name="CapacidadAuditorio" id="capacidad" placeholder="Capacidad">
+        <input class="form_add" type="number" name="CategoriaAuditorio" id="categoria" placeholder="Categoría">
+        <input class="form_add" type="text" name="NombreAuditorio" id="nombre" placeholder="Nombre">
+        <br>
+        <input onclick= "guardarAuditorio()" type="button" value="Guardar" id="Guardar_btn">
+        <input onclick="Clear()" type="button" value="Limpiar" id="Limpiar_btn">
+        <input onclick="editarAuditorio()" type="button" value="Actualizar" id="Actualizar_btn">
+    </section>
+    </body>
+</html> 
+    
+    
